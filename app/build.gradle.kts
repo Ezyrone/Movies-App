@@ -42,6 +42,7 @@ dependencies {
 
     // Hilt
     implementation("com.google.dagger:hilt-android:2.48")
+    implementation(libs.androidx.contentpager)
     kapt("com.google.dagger:hilt-compiler:2.48")
     implementation("androidx.core:core-ktx:1.12.0")
 
