@@ -15,8 +15,7 @@ class MovieActivity : ComponentActivity() {
         setContent {
             MoviesAppTheme {
 
-                val repository = MovieRepository()
-                val viewModel = MovieViewModel()
+
 
             }
         }
