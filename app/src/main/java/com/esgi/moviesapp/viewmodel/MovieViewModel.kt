@@ -19,6 +19,10 @@ class MovieViewModel(
 
     val tvShows : StateFlow<List<TvShow>> = _tvShows
 
+    init {
+        getTvShows()
+    }
+
     fun getTvShows(page : Int = 1) = viewModelScope.launch(
         Dispatchers.IO
     ) {
