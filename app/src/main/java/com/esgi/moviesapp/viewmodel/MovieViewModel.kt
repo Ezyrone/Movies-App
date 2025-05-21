@@ -4,13 +4,17 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.esgi.moviesapp.data.model.TvShow
 import com.esgi.moviesapp.data.repository.MovieRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class MovieViewModel(
+
+@HiltViewModel
+class MovieViewModel @Inject constructor(
     private val movieRepository : MovieRepository
 ): ViewModel() {
 

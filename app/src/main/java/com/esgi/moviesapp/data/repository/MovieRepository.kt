@@ -4,9 +4,10 @@ import com.esgi.moviesapp.data.model.TvShow
 import com.esgi.moviesapp.data.service.MovieService
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import javax.inject.Inject
 
 
-class MovieRepository(
+class MovieRepository @Inject constructor(
     private val movieService: MovieService
 ) {
 
