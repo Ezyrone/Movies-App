@@ -1,4 +1,4 @@
-package com.esgi.moviesapp
+package com.esgi.moviesapp.view
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -13,8 +13,7 @@ class MovieActivity : ComponentActivity() {
         setContent {
             MoviesAppTheme {
 
-                }
+            }
             }
         }
     }
-
