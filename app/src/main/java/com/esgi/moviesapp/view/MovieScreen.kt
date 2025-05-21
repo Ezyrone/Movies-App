@@ -1,7 +1,9 @@
 package com.esgi.moviesapp.view
 
 import android.icu.text.CaseMap
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.material.Scaffold
 import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
@@ -17,14 +19,18 @@ fun MovieScreen(modifier: Modifier = Modifier) {
             TopAppBar(
                 Title = {
                     Text(text = "Movies")
-                },
-                modifier = TODO(),
-                backgroundColor = TODO(),
-                contentColor = TODO(),
-                elevation = TODO(),
-                contentPadding = TODO(),
-                content = TODO()
-            )
+                }
+            ){ innerPadding ->
+                LazyVerticalGrid(
+                    columns = GridCells.Fixed(2),
+                    contentPadding = innerPadding,
+                    horizontalArrangement = Arrangement.SpaceBy(16.dp),
+                    verticalArrangement = Arrangement.spacedBy(16.dp),
+                    modifier = Modifier.fillMaxSize()
+                ) {
+
+                }
+            }
         }
     ) {  }
 }
