@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.esgi.moviesapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.esgi.moviesapp"
